@@ -1,0 +1,91 @@
+/* App.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #c0392b;
+} 
+.cal{
+    
+    
+     text-align:center ;
+   color: #f39c12;
+   margin-bottom: 20px;
+  
+   
+}
+
+
+
+.calculator {
+    width: 330px;
+    background:#333;
+    border-radius: 10px;
+   padding: 20px;
+    overflow: hidden;
+}
+
+.display {
+    width: 100%;
+        height: 60px;
+        background-color: #222;
+        color: #ccc;
+        font-size: 2em;
+        text-align: right;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    background-color: #666;
+}
+
+button[data-value="="] {
+    grid-column: span 2;
+    background-color: #f39c12;
+}
+
+button[data-value="="]:hover {
+    background-color: #e67e22;
+}
+
+button[data-value="AC"],
+button[data-value="DEL"] {
+    background-color: #e74c3c;
+}
+
+button[data-value="AC"]:hover,
+button[data-value="DEL"]:hover {
+    background-color: #c0392b;
+}
